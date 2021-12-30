@@ -1,5 +1,6 @@
 /*
 Luogu P2324 骑士精神
+Author : AstatineAi
 */
 #include <cstdio>
 #include <cstring>

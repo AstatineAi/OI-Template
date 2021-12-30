@@ -40,15 +40,15 @@ DP 并没有所谓的 "模板" 可言,相对自由多变.
 
 ## 字符串 String
 
-- 字符串哈希 String Hash
-- 字典树 Trie
-- 前缀函数与 KMP 字符串匹配 Prefix Func and Knuth-Morris-Pratt Algo
+- [字符串哈希](https://github.com/AstatineAi/OI-Template/blob/main/String/StringHash.cpp) String Hash
+- [字典树](https://github.com/AstatineAi/OI-Template/blob/main/String/Trie.cpp) Trie
+- [前缀函数与 KMP 字符串匹配](https://github.com/AstatineAi/OI-Template/blob/main/String/KMP.cpp) Prefix Func and Knuth-Morris-Pratt Algo
 - 扩展 KMP Z-Func
-- AC 自动机 Aho-Corasick Automaton
-- 后缀数组 Suffix Array
-- 后缀自动机 Suffix Automaton
-- 广义后缀自动机 General SAM
-- Manacher 算法
+- [AC 自动机](https://github.com/AstatineAi/OI-Template/blob/main/String/AhoCorasickAutomaton.cpp) Aho-Corasick Automaton
+- [后缀数组](https://github.com/AstatineAi/OI-Template/blob/main/String/SuffixArray.cpp) Suffix Array
+- [后缀自动机](https://github.com/AstatineAi/OI-Template/blob/main/String/SuffixAutomaton.cpp) Suffix Automaton
+- [广义后缀自动机](https://github.com/AstatineAi/OI-Template/blob/main/String/GeneralSAM.cpp) General SAM
+- [Manacher 算法](https://github.com/AstatineAi/OI-Template/blob/main/String/Manacher.cpp)
 
 ## 图论 Graph
 

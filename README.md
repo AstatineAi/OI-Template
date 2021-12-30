@@ -78,6 +78,8 @@ DP 并没有所谓的 "模板" 可言,相对自由多变.
 - 差分约束 Difference Constraints
 - 严格次短路 Strictly Sub-shortest Path
 - k 短路 Kth Shortest Path
+    - 普通 A* k 短路
+    - 可持久化可并堆优化
 - 强连通分量 Strongly Connecting Components
 - 割点 & 桥 Articulation Point and Bridge
 - 圆方树 Block Forest

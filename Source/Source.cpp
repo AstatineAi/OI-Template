@@ -128,7 +128,7 @@ namespace IO {
         }
     }
 	
-	void getStr(char *s) {
+	inline void getStr(char *s) {
 	    char ch = getC();int len = 0;
 	    while(!isalpha(ch)) ch = getC();
 	    while(isalpha(ch)) {
@@ -138,7 +138,7 @@ namespace IO {
 	    s[len] = '\0';
 	}
 	
-	void putStr(const char *s) {
+	inline void putStr(const char *s) {
 	    int len = strlen(s);
 	    rep(i,0,len - 1)
 	        putC(s[i]);

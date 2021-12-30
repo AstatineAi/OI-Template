@@ -14,7 +14,7 @@
 
 #define rep(a,b,c) for(int a = (b);a <= (c);++a)
 #define repb(a,b,c) for(int a = (b);a >= (c);--a)
-#define (a,b) for(int a = head[b]; ~a ; a = e[a].nxt)
+#define repg(a,b) for(int a = head[b]; ~a ; a = e[a].nxt)
 #define mems(a,b) memset(a,b,sizeof(a))
 
 #define DEBUG
@@ -23,7 +23,7 @@
 
 typedef long long ll;
 typedef unsigned long long ull;
-typedef __uint128 I128;
+typedef __uint128_t I128;
 typedef double db;
 typedef std::pair<int,int> pii;
 
@@ -140,7 +140,7 @@ namespace IO {
 	
 	void putStr(const char *s) {
 	    int len = strlen(s);
-	    ff(i,0,len - 1)
+	    rep(i,0,len - 1)
 	        putC(s[i]);
 	    enter;
 	}

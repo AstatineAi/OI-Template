@@ -6,24 +6,28 @@
 
 不定时更新.
 
+可能出现大量 C 风格与 C++ 风格混用的情况.
+
+为了这个模板库,我需要把写过的模板都重写一遍,某种意义上的模板马拉松(?).
+
 # 目录 Catalogue
 
-- Source
+- [Source](https://github.com/AstatineAi/OI-Template/blob/main/Source/Source.cpp)
 
 ## 基础算法 Basic Algo
 
 ### 排序 Sorting
 
-- 归并排序 Merge Sort
-- 基数排序 Radix Sort
+- [归并排序](https://github.com/AstatineAi/OI-Template/blob/main/BasicAlgo/MergeSort.cpp) Merge Sort
+- [基数排序](https://github.com/AstatineAi/OI-Template/blob/main/BasicAlgo/RadixSort.cpp) Radix Sort
 
 ### 搜索 Search
 
 - 深度优先搜索 DFS (真的需要这种模板吗?)
 - 广度优先搜索 BFS (真的需要这种模板吗?)
-- A*
-- 迭代加深 A* 搜索 Iterative Deepening A*
-- 舞蹈链 Dancing Links (DLX)
+- [A*](https://github.com/AstatineAi/OI-Template/blob/main/BasicAlgo/Astar.cpp)
+- [迭代加深 A* 搜索](https://github.com/AstatineAi/OI-Template/blob/main/BasicAlgo/IDAstar.cpp) Iterative Deepening A*
+- [舞蹈链](https://github.com/AstatineAi/OI-Template/blob/main/BasicAlgo/DLX.cpp) Dancing Links (DLX)
 
 ## 动态规划 Dynamic Programming
 
@@ -37,7 +41,6 @@ DP 并没有所谓的 "模板" 可言,相对自由多变.
 ## 字符串 String
 
 - 字符串哈希 String Hash
-- 哈希表 Hash Table
 - 字典树 Trie
 - 前缀函数与 KMP 字符串匹配 Prefix Func and Knuth-Morris-Pratt Algo
 - 扩展 KMP Z-Func
@@ -93,6 +96,7 @@ DP 并没有所谓的 "模板" 可言,相对自由多变.
 - 单调队列 Minimum Queue
 - 稀疏表 Sparse Table
 - 并查集 Disjoint Set Union
+- 哈希表 Hash Table
 - 堆 Heap
     - 二叉堆 Binary Heap
     - 左偏树 Leftist Tree
@@ -157,3 +161,6 @@ DP 并没有所谓的 "模板" 可言,相对自由多变.
 
 - 莫队 Mo's Algo
 - 01 分数规划 01 Fraction Programming
+- [A+B problem,but solved by Dinic's Algorithm](https://github.com/AstatineAi/OI-Template/blob/main/Misc/A%2BB_Dinic.cpp)
+- [A Quine Written By C++](https://github.com/AstatineAi/OI-Template/blob/main/Misc/quine.cpp)
+- [猴子排序 Bogo Sort](https://github.com/AstatineAi/OI-Template/blob/main/Misc/bogo_sort.cpp)

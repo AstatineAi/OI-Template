@@ -92,6 +92,7 @@ DP 并没有所谓的 "模板" 可言,相对自由多变.
     - O(nmf) 做法
     - 强多项式 poly(VE)
 - 二分图最大匹配 Maximum Bipartite Matching
+- 二分图最大权匹配 Maximum Weight Bipartite Matching
 
 ## 数据结构 Data Structure
 

@@ -136,6 +136,8 @@ DP 并没有所谓的 "模板" 可言,相对自由多变.
 - 卢卡斯定理 Lucas Theorem
 - 扩展卢卡斯定理 ExLucas Theorem
 - BSGS离散对数 Baby Step Giant Step
+- 米勒-拉宾素性测试 Miller-Rabin Primality Test
+- 波拉德 Rho 因数分解 Pollard-Rho Algo
 - 杜教筛 Du's Seive
 - 自适应辛普森法 Adaptive Simpson's Rule
 - 矩阵快速幂 Matrix Quick Power

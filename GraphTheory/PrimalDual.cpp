@@ -1,0 +1,192 @@
+/*
+Luogu P3381 MCMF : Primal Dual
+Author : AstatineAi
+*/
+#include <cstdio>
+#include <cstring>
+#include <cstdlib>
+#include <cmath>
+#include <cctype>
+#include <climits>
+#include <cassert>
+#include <algorithm>
+#include <iostream>
+#include <utility>
+#include <queue>
+#include <vector>
+#include <functional>
+
+#define space putC(' ')
+#define enter putC('\n')
+#define El_Pueblo_Unido_Jamas_Sera_Vencido
+
+#define rep(a,b,c) for(int a = (b);a <= (c);++a)
+#define repb(a,b,c) for(int a = (b);a >= (c);--a)
+#define repg(a,b) for(int a = head[b]; ~a ; a = e[a].nxt)
+#define mems(a,b) memset(a,b,sizeof(a))
+
+#define DEBUG
+// #define NDEBUG // ban assert
+#define O(a) std::cerr<<#a<<':'<<a<<std::endl;
+
+typedef long long ll;
+typedef unsigned long long ull;
+typedef __uint128_t I128;
+typedef double db;
+typedef std::pair<int,int> pii;
+
+constexpr int N = 5005;
+constexpr int M = 50005;
+constexpr int INF = 1e9;
+constexpr int I = 0x3f3f3f3f;
+constexpr int MOD = 998244353;
+
+namespace IO {
+	#define IS stdin
+	#define OS stdout
+	constexpr int IOLIM = 10000;
+	char ibuf[IOLIM],obuf[IOLIM];
+	char *_i = ibuf,*_o = obuf;
+	inline void init_IO() {
+		fread(ibuf,IOLIM,sizeof(char),IS);
+	}
+	
+	inline char getC() {
+		if(_i == ibuf + IOLIM) {
+			mems(ibuf,0);
+			fread(ibuf,IOLIM,sizeof(char),IS);
+			_i = ibuf;
+		}
+		return *_i++;
+	}
+	
+	inline void end_IO() {
+		fwrite(obuf,_o - obuf,sizeof(char),OS);
+		fclose(IS),fclose(OS);
+	}
+	
+	inline void putC(char ch) {
+		if(_o == obuf + IOLIM) {
+			fwrite(obuf,_o - obuf,sizeof(char),OS);
+			_o = obuf;
+		}
+		*_o++ = ch;
+	}
+	
+	inline int read() {
+		int res = 0;char ch = getC();bool m = 1;
+		while(!isdigit(ch)) {
+			if(ch == '-') m = 0;
+			ch = getC();
+		}
+		while(isdigit(ch)) {
+			res = res * 10 + (ch ^ 48);
+			ch = getC();
+		}
+		return m ? res : -res;
+	}
+	
+	inline void write(int x) {
+		if(x < 0) putC('-'),x = -x;
+		static int sta[20];int top = 0;
+		do
+			sta[top++] = x % 10,x /= 10;
+		while(x);
+		while(top) putC(sta[--top] + '0');
+	}
+}
+using IO::init_IO;
+using IO::end_IO;
+using IO::read;
+using IO::write;
+using IO::putC;
+
+int head[N],ecnt = -1;
+struct Edge {
+	int nxt,to,cap,w;
+}e[M << 1];
+inline void AddEdge(int st,int ed,int cap,int w) {
+	e[++ecnt] = (Edge) {head[st],ed,cap,w},head[st] = ecnt;
+	e[++ecnt] = (Edge) {head[ed],st,0,-w},head[ed] = ecnt;
+}
+
+struct Node {
+	int e,nxt;
+}pth[N];
+
+int n,m,s,t;
+bool vis[N];
+int h[N];
+void SPFA() {
+	memset(h,63,sizeof(int) * (n + 1)),h[s] = 0;
+	std::queue<int> q;q.push(s);
+	while(!q.empty()) {
+		int u = q.front();q.pop();
+		vis[u] = 0;
+		repg(i,u) {
+			int v = e[i].to;
+			if(h[v] > h[u] + e[i].w && e[i].cap) {
+				h[v] = h[u] + e[i].w;
+				if(!vis[v]) {
+					vis[v] = 1;
+					q.push(v);
+				}
+			}
+		}
+	}
+}
+
+int dis[N];
+bool dijkstra() {
+	memset(dis,63,sizeof(int) * (n + 1)),dis[s] = 0;
+	memset(vis,0,sizeof(bool) * (n + 1));
+	std::priority_queue<pii,std::vector<pii>,std::greater<pii> > q;
+	q.push(std::make_pair(0,s));
+	while(!q.empty()) {
+		int u = q.top().second;q.pop();
+		if(vis[u]) continue;
+		vis[u] = 1;
+		repg(i,u) {
+			int v = e[i].to;
+			int w = e[i].w + h[u] - h[v];
+			if(dis[v] > dis[u] + w && e[i].cap) {
+				dis[v] = dis[u] + w;
+				q.push(std::make_pair(dis[v],v));
+				pth[v].e = i,pth[v].nxt = u;
+			}
+		}
+	}
+	return vis[t];
+}
+
+void MCMF() {
+	int maxf = 0,minc = 0;
+	SPFA();
+	dijkstra();
+	while(dijkstra()) {
+		int minf = INF;
+		rep(i,1,n) h[i] += dis[i];
+		for(int i = t;i != s;i = pth[i].nxt)
+			minf = std::min(minf,e[pth[i].e].cap);
+		for(int i = t;i != s;i = pth[i].nxt) {
+			e[pth[i].e].cap -= minf;
+      		e[pth[i].e ^ 1].cap += minf;
+      	}
+      	maxf += minf;
+      	minc += (minf * h[t]);
+	}
+	write(maxf),space,write(minc),enter;
+}
+
+int main() {
+	init_IO();
+	n = read(),m = read(),s = read(),t = read();
+	memset(head,-1,sizeof(int) * (n + 1));
+	rep(i,1,m) {
+		int st = read(),ed = read(),cap = read(),w = read();
+		AddEdge(st,ed,cap,w);
+	}
+	MCMF();
+	end_IO();
+	return 0;
+}

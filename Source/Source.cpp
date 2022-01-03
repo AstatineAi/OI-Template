@@ -11,6 +11,7 @@
 
 #define space putC(' ')
 #define enter putC('\n')
+#define El_Pueblo_Unido_Jamas_Sera_Vencido
 
 #define rep(a,b,c) for(int a = (b);a <= (c);++a)
 #define repb(a,b,c) for(int a = (b);a >= (c);--a)

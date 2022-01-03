@@ -68,30 +68,30 @@ DP 并没有所谓的 "模板" 可言,相对自由多变.
     - [点分治](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/Tree/TreeDivideandConquer.cpp) Tree Divide and Conquer
     - 点分树 Dynamic Tree Divide
     - 树哈希 Tree Hash
-- 最小生成树  Minimum Spanning Tree
+- [最小生成树](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/MST.cpp)  Minimum Spanning Tree
 - 单源最短路径 Single Source Shortest Paths
-    - 堆优化 Dijkstra 算法
-    - Bellman-Ford 算法
-    - 队列优化的 Bellman-Ford 算法
+    - [堆优化 Dijkstra 算法](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/Dijkstra.cpp)
+    - [Bellman-Ford 算法](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/BellmanFord.cpp)
+    - [队列优化的 Bellman-Ford 算法](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/SPFA.cpp)
 - 全源最短路径 All Pairs Shortest Paths
-    - Floyd-Warshall 算法
-    - Johnson 算法
-- 差分约束 Difference Constraints
-- 严格次短路 Strictly Sub-shortest Path
+    - [Floyd-Warshall 算法](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/FloydWarshall.cpp)
+    - [Johnson 算法](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/Johnson.cpp)
+- [差分约束](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/DifferenceConstraints.cpp) Difference Constraints
+- [严格次短路](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/SubShortestPath.cpp) Strictly Sub-shortest Path
 - k 短路 Kth Shortest Path
-    - 普通 A* k 短路
+    - [普通 A* k 短路](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/KthShortestPath.cpp)
     - 可持久化可并堆优化
-- 强连通分量 Strongly Connecting Components
-- 割点 & 桥 Articulation Point and Bridge
+- [强连通分量](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/SCC.cpp) Strongly Connecting Components
+- [割点](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/ArticulationPoint.cpp) & [桥](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/Bridge.cpp) Articulation Point and Bridge
 - 圆方树 Block Forest
 - 2-SAT
-- 欧拉路径 & 欧拉回路 Eulerian Trail & Eulerian Circuit
-- 拓扑排序 Topo Sort
-- 最大流 Maximum Flow - Dinic Algo
+- [欧拉路径 & 欧拉回路](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/EulerianTrail.cpp) Eulerian Trail & Eulerian Circuit
+- [拓扑排序](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/TopoSort.cpp) Topo Sort
+- [最大流](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/MaixmumFlowDinic.cpp) Maximum Flow - Dinic Algo
 - 费用流 
-    - O(nmf) 做法
-    - 强多项式 poly(VE)
-- 二分图最大匹配 Maximum Bipartite Matching
+    - [O(nmf) 做法](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/SSP.cpp)
+    - [强多项式](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/PrimalDual.cpp) poly(VE)
+- [二分图最大匹配](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/BipartiteMatching.cpp) Maximum Bipartite Matching
 - 二分图最大权匹配 Maximum Weight Bipartite Matching
 
 ## 数据结构 Data Structure

@@ -92,7 +92,7 @@ DP 并没有所谓的 "模板" 可言,相对自由多变.
     - [O(nmf) 伪多项式](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/SSP.cpp)
     - [多项式](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/PrimalDual.cpp) poly(VE)
 - [二分图最大匹配](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/BipartiteMatching.cpp) Maximum Bipartite Matching
-- 二分图最大权匹配 Maximum Weight Bipartite Matching
+- [二分图最大权匹配](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/WeightBipartiteMatching.cpp) Maximum Weight Bipartite Matching
 
 ## 数据结构 Data Structure
 

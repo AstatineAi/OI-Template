@@ -1,7 +1,3 @@
- {% raw %}
-  $$a^2 + b^2 = c^2$$
- {% endraw %}
-
 # OI-Templates by AstatineAi
 
 使用统一命名方式,在给定缺省源下直接可以使用的模板库.

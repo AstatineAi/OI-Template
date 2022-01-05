@@ -59,6 +59,7 @@ DP 并没有所谓的 "模板" 可言,相对自由多变.
         - [欧拉序 & RMQ](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/Tree/LCA_RMQ.cpp) Euler Tour Technique
         - [重链剖分](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/Tree/LCA_HLD.cpp) Heavy Light Decomposition
         - [树上倍增](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/Tree/LCA_BL.cpp) Binary Lifting
+        - [动态树]((https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/Tree/LCA_LCT.cpp) Link-Cut Tree
     - 树链剖分
         - [重链剖分](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/Tree/HeavyLightDecomposition.cpp) Heavy Light Decomposition
         - [长链剖分](https://github.com/AstatineAi/OI-Template/blob/main/GraphTheory/Tree/LongShortDecomposition.cpp) Long Short Decompostiton

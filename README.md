@@ -97,32 +97,32 @@ DP 并没有所谓的 "模板" 可言,相对自由多变.
 
 ## 数据结构 Data Structure
 
-- 单调栈 Minimum Stack
-- 单调队列 Minimum Queue
-- 稀疏表 Sparse Table
-- 并查集 Disjoint Set Union
-- 哈希表 Hash Table
+- [单调栈](https://github.com/AstatineAi/OI-Template/blob/main/DataStructure/MinimumStack.cpp) Minimum Stack
+- [单调队列](https://github.com/AstatineAi/OI-Template/blob/main/DataStructure/MinimumQueue.cpp) Minimum Queue
+- [稀疏表](https://github.com/AstatineAi/OI-Template/blob/main/DataStructure/SparseTable.cpp) Sparse Table
+- [并查集](https://github.com/AstatineAi/OI-Template/blob/main/DataStructure/DisjointSetUnion.cpp) Disjoint Set Union
+- [哈希表](https://github.com/AstatineAi/OI-Template/blob/main/DataStructure/HashTable.cpp) Hash Table
 - 堆 Heap
-    - 二叉堆 Binary Heap
-    - 左偏树 Leftist Tree
-- 树状数组 Fenwick Tree/Binary Indexed Tree
-- 二维树状数组 2D Fenwick Tree
-- 线段树 Segment Tree
+    - [二叉堆](https://github.com/AstatineAi/OI-Template/blob/main/DataStructure/BinaryHeap.cpp) Binary Heap
+    - [左偏树](https://github.com/AstatineAi/OI-Template/blob/main/DataStructure/LeftistTree.cpp) Leftist Tree
+- [树状数组](https://github.com/AstatineAi/OI-Template/blob/main/DataStructure/BIT.cpp) Fenwick Tree/Binary Indexed Tree
+- [二维树状数组](https://github.com/AstatineAi/OI-Template/blob/main/DataStructure/2DBIT.cpp) 2D Fenwick Tree
+- [线段树](https://github.com/AstatineAi/OI-Template/blob/main/DataStructure/SegmentTree.cpp) Segment Tree
+- [可持久化权值线段树/主席树](https://github.com/AstatineAi/OI-Template/blob/main/DataStructure/PersistantSegmentTree.cpp) Persistent Segment Tree
 - 李超线段树 Li Chao Tree
 - 吉老师线段树 Segment Tree Beats
-- 划分树 Dividing Tree
-- 猫树 Cat Tree
+- [划分树](https://github.com/AstatineAi/OI-Template/blob/main/DataStructure/DividingTree.cpp) Dividing Tree
+- [猫树](https://github.com/AstatineAi/OI-Template/blob/main/DataStructure/CatTree.cpp) Cat Tree
 - 平衡树 Self Balanced Tree
-    - 伸展树 Splay
+    - [伸展树](https://github.com/AstatineAi/OI-Template/blob/main/DataStructure/Splay.cpp) Splay
     - 树堆 Treap
     - 替罪羊树 Scapegoat Tree
-- 可持久化权值线段树/主席树 Persistent Segment Tree
 - 树套树
     - 线段树套平衡树 BST in SegTree
     - 线段树套线段树 SegTree in SegTree
     - 树状数组套主席树 Chairman Tree in BIT
 - K-D Tree
-- Link-Cut Tree
+- [Link-Cut Tree](https://github.com/AstatineAi/OI-Template/blob/main/DataStructure/LCT.cpp)
 
 ## 数学 Math
 

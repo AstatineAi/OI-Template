@@ -155,6 +155,8 @@ DP 并没有所谓的 "模板" 可言,相对自由多变.
     - 多项式求逆 Poly Inverse
     - 多项式求导/积分 Poly Derivative/Integration
     - 多项式对数函数/指数函数 Poly Ln/Exp
+    - 多项式开根 Poly Sqrt
+    - 多项式快速幂/多项式 k 次根 Ploy Power/Kth Root
 
 ## 计算几何 Computational geometry
 
